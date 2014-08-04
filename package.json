@@ -1,0 +1,30 @@
+{
+  "name": "remove-source-mapping",
+  "version": "0.0.0",
+  "description": "Remove a source file from a sourcemap",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/smrq/remove-source-mapping"
+  },
+  "keywords": [
+    "sourcemap",
+    "source",
+    "map"
+  ],
+  "author": "Greg Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smrq/remove-source-mapping/issues"
+  },
+  "homepage": "https://github.com/smrq/remove-source-mapping",
+  "dependencies": {
+    "source-map": "^0.1.38"
+  },
+  "devDependencies": {
+    "tape": "^2.13.4"
+  }
+}
