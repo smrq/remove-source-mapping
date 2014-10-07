@@ -1,3 +1,12 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
+deploy:
+  provider: npm
+  email: smr.kyu@gmail.com
+  api_key:
+    secure: a7l0bYmy4ghGF58nT+2VXwtlc4WrnbtKNeEn9eAav48PEbN7/T8pKI8eJX1+QlAjXv5xHm9HIxYGxXqxLz37+ihjx4sjBiMvyKzdqh7ZeNqZ1fzrIU/0RHCYlidVfZ2lzFtCR9Bszbx9RKr6VVidKhlNXwk5XZI4jTEw/h/QMBE=
+  on:
+    tags: true
+    repo: smrq/remove-source-mapping
+    branch: master
