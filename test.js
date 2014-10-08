@@ -24,10 +24,8 @@ test('test', function (t) {
 	expectedGen.addMapping({ generated: { line: 4, column: 0 }, source: 'original.js', original: { line: 4, column: 0 }});
 	expectedGen.addMapping({ generated: { line: 4, column: 0 }, source: 'original2.js', original: { line: 4, column: 0 }});
 
-	var inputMap = inputGen.toJSON();
-	var expectedMap = expectedGen.toJSON();
-	var outputMap = removeMapping('removeMe.js', inputMap);
+	t.deepEqual(removeMapping('removeMe.js', inputGen.toJSON()), expectedGen.toJSON());
+	t.deepEqual(removeMapping('removeMe.js', inputGen.toString()), expectedGen.toJSON());
 
-	t.deepEqual(outputMap, expectedMap);
 	t.end();
 });
